@@ -15,3 +15,27 @@ This repository contains a set of scripts designed to automate the setup of new 
 3. Run the main setup script:
    ```bash
    ./setup_script.sh
+
+## Customization
+
+Customizing the setup scripts allows you to tailor the installation process to fit your specific needs. Below are the ways you can customize each part of the setup:
+
+### Package List
+Modify the PackagesList file to include the packages you want installed. This file contains a list of packages that will be attempted to install on any distribution. Ensure that the package names are consistent across the distributions you intend to use.
+
+#### Example for Aptfile:
+```
+# Basic utilities
+git
+curl
+vim
+
+# Development tools
+build-essential
+python3
+python3-pip
+
+# Other software
+vlc
+gimp
+```
